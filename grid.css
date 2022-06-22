@@ -5,10 +5,19 @@
 }
 body{
     background-color: rgba(3, 3, 43, 0.795);
+    display: flex;
+    place-items: center;
+    height: 100vh;
 }
 main{
     display: grid;
-    grid-template-areas: ;
+    grid-template-areas: 
+    'a a b'
+    'c d e'
+    ;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
 }
 main div{
     padding: 2em;
@@ -26,11 +35,17 @@ main div{
     background-color: green;
     grid-area: c;
 }
+.column{
+    padding: 0;
+    
+}
 .item-d{
     background-color: lightblue;
     grid-area: d;
+    
 }
 .item-e{
     background-color: lightblue;
     grid-area: e;
+    
 }
